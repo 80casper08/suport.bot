@@ -28,7 +28,7 @@ Thread(target=run_flask).start()
 # Завантаження токена
 load_dotenv()
 TOKEN = os.getenv("TOKEN")
-ADMIN_ID = 710633503
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
